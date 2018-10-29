@@ -47,7 +47,7 @@ spec:
               key: mongodb-root-username
               name: mongo-mongodb
               optional: false
-        image: blueforest/categorie:1.0.0
+        image: blueforest/categorie:1.0.1
         imagePullPolicy: Always
         name: categorie
         resources: {}
