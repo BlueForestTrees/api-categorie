@@ -47,7 +47,7 @@ spec:
               key: mongodb-root-username
               name: mongo-mongodb
               optional: false
-        image: blueforest/categorie:1.0.1
+        image: blueforest/categorie:1.0.2
         imagePullPolicy: Always
         name: categorie
         resources: {}
@@ -72,11 +72,3 @@ spec:
     rollingUpdate:
       maxUnavailable: 1
     type: RollingUpdate
-status:
-  currentNumberScheduled: 3
-  desiredNumberScheduled: 3
-  numberMisscheduled: 0
-  numberReady: 0
-  numberUnavailable: 3
-  observedGeneration: 1
-  updatedNumberScheduled: 3

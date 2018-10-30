@@ -1,6 +1,6 @@
 {
   "name": "categorie",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "les catégories de produits",
   "main": "dist/index.js",
   "repository": "https://github.com/BlueForestTrees/api-categorie.git",
