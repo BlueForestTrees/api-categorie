@@ -11,7 +11,7 @@ const categories = col(ENV.DB_COLLECTION)
 router.get("/api/categorie",
     query("pid").optional().isMongoId().withMessage("invalid mongo id").customSanitizer(objectNoEx),
     run(({pid}) => categories
-        .find({pid: pid || null}, {})
+        .find({pids: pid || null}, {})
         .sort({'name': 1})
         .toArray())
 )
