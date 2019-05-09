@@ -8,6 +8,11 @@ export const registry = [
         script: () => col(ENV.DB_COLLECTION).createIndex({"name": 1})
     },
     {
+        version: "1.0.6",
+        log: "externId idx",
+        script: () => col(ENV.DB_COLLECTION).createIndex({"externId": 1})
+    },
+    {
         version: "1.0.3",
         log: "pid to pids",
         script: () => col(ENV.DB_COLLECTION).updateOne({pid: null}, {$set: {pids: null}, $unset: {pid: ""}})
